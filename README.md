@@ -1,1 +1,253 @@
-https://github.com/shubhamvrs/portfolio-website/blob/main/portfolio%20code.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Additional Styling */
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Styling for the About Me section */
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-text {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        /* Styling for the Blog Section */
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the CV Section */
+        #cv ul, #cv ol {
+            margin-left: 20px;
+        }
+
+        #cv li {
+            margin-bottom: 10px;
+        }
+
+        /* JavaScript-added Styling */
+        .nav-scrolled {
+            background-color: #222; /* Darker color when scrolled */
+        }
+    </style>
+    <title>Shubham - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Shubham</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="C:\Users\Subham\Downloads\rajaphotu.jpeg" alt="Shubham">
+            </div>
+            <div class="about-text">
+                <p>Welcome to my portfolio website. I am a passionate web developer with a strong background in front-end and back-end technologies. I specialize in creating responsive and user-friendly web applications. Let's collaborate on your next project!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Include details of your projects with links and descriptions -->
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <a href="project1.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="project2.html">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Blog Post Title 1</h3>
+            <p>Write the content of your blog post here. You can provide insights, tutorials, or any web development-related topics you are passionate about.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Blog Post Title 2</h3>
+            <p>Write another blog post here. Share your knowledge and experiences with your audience.</p>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <section id="cv">
+        <h2>CV</h2>
+        <!-- Include your CV or resume content here, such as education, work experience, skills, and achievements. -->
+        <p>Education:</p>
+        <ul>
+            <li>Bachelor's in Computer Science - XYZ University</li>
+            <li>Web Development Certification - ABC Coding School</li>
+        </ul>
+
+        <p>Work Experience:</p>
+        <ul>
+            <li>Web Developer at XYZ Company - 2 years</li>
+            <li>Freelance Web Developer - 1 year</li>
+        </ul>
+
+        <p>Skills:</p>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js, Express</li>
+            <li>Database Management (MySQL, MongoDB)</li>
+        </ul>
+
+        <p>Achievements:</p>
+        <ul>
+            <li>Completed 10+ web development projects</li>
+            <li>Received the "Web Developer of the Year" award</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Contact information and a contact form can be placed here. -->
+        <p>Contact me at: your.email@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 20XX Shubham</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and navigation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector("header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    header.classList.add("nav-scrolled");
+                } else {
+                    header.classList.remove("nav-scrolled");
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll("a[href^='#']");
+
+            anchorLinks.forEach(anchorLink => {
+                anchorLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - header.offsetHeight,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
